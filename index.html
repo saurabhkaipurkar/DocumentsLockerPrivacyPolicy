@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Privacy Policy for Document Locker — how we collect, store, use, and protect your data. Written for Google Play transparency." />
+  <meta name="theme-color" content="#0b0b12" />
+  <title>Privacy Policy — Document Locker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html" aria-label="Document Locker home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+          </svg>
+        </span>
+        <span class="full">Document Locker</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#data-we-collect">Data</a></li>
+        <li><a href="#permissions">Permissions</a></li>
+        <li><a href="#play-data-safety">Play Safety</a></li>
+        <li><a href="terms.html">Terms</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="eyebrow">Privacy · Transparency · Trust</div>
+        <h1>Your vault. <em>Your device.</em> Your control.</h1>
+        <p class="hero-lead">
+          This Privacy Policy explains — in plain language — how
+          <strong style="color:var(--text)">Document Locker</strong>
+          (package: <code style="color:var(--accent)">com.myapp.microservice</code>)
+          handles information when you use our Android app. We designed the product so that
+          sensitive credentials and documents stay primarily on your device.
+        </p>
+
+        <div class="meta-row">
+          <span class="meta-chip"><strong>Effective:</strong> July 11, 2026</span>
+          <span class="meta-chip"><strong>Last updated:</strong> July 11, 2026</span>
+          <span class="meta-chip"><strong>Platform:</strong> Android (Google Play)</span>
+          <span class="meta-chip"><strong>Version:</strong> 1.0</span>
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#introduction">Read full policy</a>
+          <a class="btn btn-ghost" href="terms.html">Terms of Service</a>
+        </div>
+      </div>
+
+      <div class="trust-grid" aria-label="Privacy highlights">
+        <article class="trust-card">
+          <div class="icon">🔒</div>
+          <h3>On-device first</h3>
+          <p>Vault items (passwords, cards, notes, docs) are stored in a local database on your phone.</p>
+        </article>
+        <article class="trust-card">
+          <div class="icon">🚫</div>
+          <h3>No ads · No sale</h3>
+          <p>We do not sell personal data and we do not show third-party advertising in the app.</p>
+        </article>
+        <article class="trust-card">
+          <div class="icon">👆</div>
+          <h3>Biometrics stay local</h3>
+          <p>Fingerprint / face unlock uses Android Biometric APIs. We never receive your biometric templates.</p>
+        </article>
+        <article class="trust-card">
+          <div class="icon">📦</div>
+          <h3>Play-ready clarity</h3>
+          <p>Sections map cleanly to Google Play Data safety disclosures for transparent publishing.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Policy body -->
+  <div class="container policy-shell">
+    <aside class="toc" aria-label="Table of contents">
+      <h2>Contents</h2>
+      <ol id="tocList">
+        <li><a href="#introduction">Introduction</a></li>
+        <li><a href="#who-we-are">Who we are</a></li>
+        <li><a href="#overview">Summary for users</a></li>
+        <li><a href="#data-we-collect">Information we process</a></li>
+        <li><a href="#how-we-use">How we use information</a></li>
+        <li><a href="#storage-security">Storage &amp; security</a></li>
+        <li><a href="#permissions">Android permissions</a></li>
+        <li><a href="#biometrics">Biometrics</a></li>
+        <li><a href="#third-parties">Third parties &amp; network</a></li>
+        <li><a href="#children">Children’s privacy</a></li>
+        <li><a href="#retention">Retention &amp; deletion</a></li>
+        <li><a href="#your-rights">Your rights &amp; choices</a></li>
+        <li><a href="#international">International users</a></li>
+        <li><a href="#play-data-safety">Google Play Data safety</a></li>
+        <li><a href="#changes">Policy changes</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ol>
+    </aside>
+
+    <main class="content">
+      <header>
+        <h1>Privacy Policy</h1>
+        <p>
+          Please read this policy carefully. By installing or using Document Locker
+          (“App”, “we”, “us”, “our”), you acknowledge the practices described here.
+          If you do not agree, please uninstall the App and stop using it.
+        </p>
+      </header>
+
+      <!-- 1 -->
+      <section class="policy-section" id="introduction">
+        <h2><span class="num">01</span> Introduction</h2>
+        <p>
+          Document Locker is a personal vault application that helps you organize sensitive
+          information such as website credentials, email accounts, social media logins, bank
+          details, card information, government document images, secure notes, and scanned documents.
+        </p>
+        <p>
+          Because the App handles highly sensitive information, privacy is not a secondary feature —
+          it is the foundation of the product. This document is written for:
+        </p>
+        <ul>
+          <li><strong>Everyday users</strong> who want to understand what happens to their data</li>
+          <li><strong>Google Play Console reviewers</strong> who require a clear, public Privacy Policy URL</li>
+          <li><strong>Regulators and auditors</strong> who expect transparent data practices</li>
+        </ul>
+        <div class="callout important">
+          <strong>Plain-language promise</strong>
+          <p>
+            We design Document Locker so that the secrets you enter stay under your control on your
+            device. We do not operate a public social network, marketplace, or ad network built on your vault data.
+          </p>
+        </div>
+      </section>
+
+      <!-- 2 -->
+      <section class="policy-section" id="who-we-are">
+        <h2><span class="num">02</span> Who we are</h2>
+        <div class="table-wrap">
+          <table>
+            <tbody>
+              <tr>
+                <th>App name</th>
+                <td>Document Locker</td>
+              </tr>
+              <tr>
+                <th>Android package name</th>
+                <td><code>com.myapp.microservice</code></td>
+              </tr>
+              <tr>
+                <th>Developer / publisher</th>
+                <td>SIDDHARTH RATAN GEDAM</td>
+              </tr>
+              <tr>
+                <th>Country / region</th>
+                <td>India</td>
+              </tr>
+              <tr>
+                <th>Privacy contact email</th>
+                <td><a href="mailto:hemantmarkhande99@gmail.com">hemantmarkhande99@gmail.com</a> <!-- TODO: replace -->
+                </td>
+              </tr>
+              <tr>
+                <th>Support contact</th>
+                <td><a href="mailto:thesiddharthgedam@gmail.com">thesiddharthgedam@gmail.com</a> <!-- TODO: replace -->
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          When this policy says “we” or “developer,” it refers to the publisher listed above —
+          the person or entity responsible for listing the App on Google Play.
+        </p>
+      </section>
+
+      <!-- 3 -->
+      <section class="policy-section" id="overview">
+        <h2><span class="num">03</span> Summary for users (quick read)</h2>
+        <p>If you only read one section, read this:</p>
+        <ul>
+          <li><strong>Vault content is local.</strong> Credentials, notes, bank details, card details, document images,
+            and similar entries you create are stored in the App’s on-device database and local storage.</li>
+          <li><strong>We do not sell your data.</strong> We do not sell, rent, or trade your personal information to
+            data brokers or advertisers.</li>
+          <li><strong>No third-party ads.</strong> The App does not integrate advertising SDKs for showing ads.</li>
+          <li><strong>Biometric unlock is optional and device-bound.</strong> Biometric templates remain managed by
+            Android / your device vendor — not uploaded to us.</li>
+          <li><strong>Backup is disabled at the app level.</strong> Android Auto Backup for this App is configured off
+            (<code>allowBackup="false"</code>) to reduce accidental cloud copies of vault data through the OS backup
+            channel.</li>
+          <li><strong>You can delete everything.</strong> Uninstalling the App removes app-private storage on your
+            device (subject to normal Android behavior). You can also delete individual items inside the App.</li>
+          <li><strong>Optional network features.</strong> If enabled, the App may use the internet for convenience
+            features such as loading website favicons; that does not upload your passwords to us.</li>
+        </ul>
+        <div class="callout success">
+          <strong>What we are not</strong>
+          <p>
+            Document Locker is not a cloud password-sync service, not a social app, and not a
+            marketing analytics product. Its purpose is local organization and protection of your personal vault.
+          </p>
+        </div>
+      </section>
+
+      <!-- 4 -->
+      <section class="policy-section" id="data-we-collect">
+        <h2><span class="num">04</span> Information we process</h2>
+        <p>
+          “Process” means any operation on data — including storing it on your device when you
+          create an entry. Below is a complete breakdown of categories relevant to the App.
+        </p>
+
+        <h3>4.1 Information you provide (vault content)</h3>
+        <p>
+          You may voluntarily enter or import the following types of information. This data is
+          stored <strong>on your device</strong> for the purpose of providing the vault features you request:
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Category</th>
+                <th>Examples of fields</th>
+                <th>Where stored</th>
+                <th>Shared with developer servers?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Account credentials</strong></td>
+                <td>Email addresses, usernames, passwords, website URLs, labels, remarks</td>
+                <td>Local Room database / app storage</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Social media credentials</strong></td>
+                <td>User ID, password, app URL, label, icon, notes</td>
+                <td>Local database / app storage</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Bank details</strong></td>
+                <td>Bank-related fields you enter (e.g. account identifiers, remarks)</td>
+                <td>Local database</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Payment card details</strong></td>
+                <td>Card number, holder name, expiry, related remarks, card image (if you add one)</td>
+                <td>Local database / internal files</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Government / identity documents</strong></td>
+                <td>Images or files you capture/upload, document labels, unique numbers, remarks</td>
+                <td>Local database + app-private file storage</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Secure notes</strong></td>
+                <td>Free-form private text and remarks</td>
+                <td>Local database</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Scanned documents</strong></td>
+                <td>Images/pages from document scanning workflows</td>
+                <td>Local storage / database references</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+              <tr>
+                <td><strong>Profile / setup data</strong></td>
+                <td>Display name or setup preferences you provide during first-run setup</td>
+                <td>Local SharedPreferences / local storage</td>
+                <td><span class="badge local">No — on device</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout warning">
+          <strong>Important about sensitive financial &amp; identity data</strong>
+          <p>
+            Card numbers, government IDs, and similar fields are extremely sensitive. Only enter them if you
+            trust the physical security of your device and your screen lock. The App is a convenience vault —
+            it does not replace bank-issued security controls or official ID storage requirements in your jurisdiction.
+          </p>
+        </div>
+
+        <h3>4.2 Information created by the App on your device</h3>
+        <ul>
+          <li><strong>App preferences:</strong> onboarding completion flag, security category lock toggles, UI settings,
+            and similar configuration.</li>
+          <li><strong>Local database records:</strong> structured storage of the items listed above, including
+            timestamps or internal IDs used only for app operation.</li>
+          <li><strong>Cached images / icons:</strong> e.g. website favicons or document images saved for offline
+            display.</li>
+        </ul>
+
+        <h3>4.3 Device &amp; permission-related data (not harvested for advertising)</h3>
+        <p>
+          Depending on the features you use and permissions you grant, the App may access:
+        </p>
+        <ul>
+          <li><strong>Photos / media / files you select</strong> — only when you choose an image or document to attach
+            (e.g. government document photo, card image).</li>
+          <li><strong>Camera capture</strong> — only when you intentionally scan or photograph a document (where the
+            feature is available).</li>
+          <li><strong>Biometric authentication signals</strong> — success/failure result from the system biometric
+            prompt; not the biometric template itself.</li>
+          <li><strong>Clipboard</strong> — only if you use paste helpers you trigger yourself (e.g. pasting into a
+            secure note).</li>
+        </ul>
+        <p>
+          We do not use these accesses to build advertising profiles, track you across other apps,
+          or create a dossier about you for marketing.
+        </p>
+
+        <h3>4.4 Information we do <em>not</em> intentionally collect</h3>
+        <ul>
+          <li>We do not require you to create an online account with us to store vault items.</li>
+          <li>We do not ask for your contacts list for vault core features.</li>
+          <li>We do not request precise location for vault core features.</li>
+          <li>We do not run third-party ad networks inside the App.</li>
+          <li>We do not sell personal information.</li>
+        </ul>
+
+        <h3>4.5 Automatically collected diagnostics (if enabled in a given build)</h3>
+        <p>
+          Some app builds may include industry-standard crash reporting or performance tooling
+          (for example, libraries used only for build/diagnostics). If a crash reporting service
+          is enabled in a published build, it may receive technical diagnostics such as:
+        </p>
+        <ul>
+          <li>App version, Android version, device model</li>
+          <li>Stack traces and crash timestamps</li>
+          <li>Non-content technical state needed to fix bugs</li>
+        </ul>
+        <p>
+          Crash tools are <strong>not intended</strong> to collect the contents of your vault entries
+          (passwords, card numbers, note text). We configure and use diagnostics to improve stability —
+          not to read your secrets.
+        </p>
+        <div class="callout">
+          <strong>Transparency note for Play Console</strong>
+          <p>
+            In your Google Play Data safety form, declare only the data types and practices that match
+            the exact build you publish. If a future version adds cloud sync, analytics, or sign-in,
+            update both the app and this policy before release.
+          </p>
+        </div>
+      </section>
+
+      <!-- 5 -->
+      <section class="policy-section" id="how-we-use">
+        <h2><span class="num">05</span> How we use information</h2>
+        <p>Information processed by the App is used solely to provide and improve the product experience you request:
+        </p>
+        <ul>
+          <li><strong>Provide vault features</strong> — create, view, edit, search, lock, and delete stored items.</li>
+          <li><strong>Security controls</strong> — optional biometric gate, category lock settings, private storage
+            configuration.</li>
+          <li><strong>Document workflows</strong> — capture, preview, label, and organize document images.</li>
+          <li><strong>Usability</strong> — show favicons or labels you associate with websites/apps; remember onboarding
+            and setup state.</li>
+          <li><strong>Reliability</strong> — diagnose crashes/bugs if diagnostic tooling is present in your build.</li>
+          <li><strong>Legal compliance</strong> — respond to lawful requests where we actually control relevant data
+            (note: vault contents typically reside only on your device and may not be available to us).</li>
+        </ul>
+        <p>We do <strong>not</strong> use vault contents for:</p>
+        <ul>
+          <li>Targeted advertising</li>
+          <li>Selling datasets</li>
+          <li>Training public AI models on your private entries</li>
+          <li>Building credit, employment, or insurance eligibility scores</li>
+        </ul>
+      </section>
+
+      <!-- 6 -->
+      <section class="policy-section" id="storage-security">
+        <h2><span class="num">06</span> Storage, security &amp; architecture</h2>
+
+        <h3>6.1 Local-first architecture</h3>
+        <p>
+          Smart Doc Organizer uses on-device storage technologies common to Android apps, including:
+        </p>
+        <ul>
+          <li><strong>Room / SQLite database</strong> inside the App’s private storage for structured vault items</li>
+          <li><strong>App-private internal files</strong> for images and document binaries you save</li>
+          <li><strong>SharedPreferences</strong> for lightweight flags and preferences (e.g. onboarding complete,
+            display name)</li>
+        </ul>
+        <p>
+          Other apps on your phone cannot read this private storage under normal Android security rules.
+        </p>
+
+        <h3>6.2 Android backup</h3>
+        <p>
+          The App is configured with <code>android:allowBackup="false"</code>. This reduces the risk that vault data is
+          automatically included in Android cloud backups associated with your Google account through the standard
+          backup API.
+        </p>
+        <div class="callout warning">
+          <strong>Device-level backups still matter</strong>
+          <p>
+            If you use manufacturer cloud backup tools, rooted devices, or full-disk imaging tools outside the App’s
+            control,
+            those systems may capture app data. Protect your device with a strong screen lock and keep your OS updated.
+          </p>
+        </div>
+
+        <h3>6.3 Security measures</h3>
+        <ul>
+          <li>App-private storage sandboxing provided by Android</li>
+          <li>Optional biometric authentication using AndroidX Biometric APIs</li>
+          <li>Category-level lock options inside the Security screen</li>
+          <li>No intentional transmission of vault entry contents to developer-operated backend for “cloud sync” in the
+            current product model</li>
+          <li>Release builds may enable code shrinking / obfuscation (ProGuard/R8) as a standard hardening practice</li>
+        </ul>
+
+        <h3>6.4 What security cannot guarantee</h3>
+        <p>
+          No mobile app can promise perfect security. Risks outside our absolute control include:
+          stolen unlocked phones, malware with elevated privileges, shoulder surfing, compromised
+          accessibility services, or user actions like screenshotting secrets. You remain responsible
+          for physical device security and for deciding what secrets to store.
+        </p>
+        <p>
+          If your app data is lost, deleted, corrupted, or becomes inaccessible due to device failure,
+          operating system issues, app updates, uninstallation, factory reset, rooting, malware,
+          backup/restore processes, or other user- or device-related causes, we are not responsible
+          for the resulting loss of information. You should keep your own offline backups of important
+          documents and information.
+        </p>
+      </section>
+
+      <!-- 7 -->
+      <section class="policy-section" id="permissions">
+        <h2><span class="num">07</span> Android permissions explained</h2>
+        <p>
+          Android requires apps to declare permissions. Below is a transparent explanation of permissions
+          relevant to Smart Doc Organizer and why they exist. Exact permission prompts can vary by Android version.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Permission</th>
+                <th>Why we request it</th>
+                <th>When used</th>
+                <th>Can you refuse?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>USE_BIOMETRIC / USE_FINGERPRINT</strong></td>
+                <td>Unlock the App or protected categories with fingerprint / face / device credential</td>
+                <td>Only when you enable biometric protection and attempt unlock</td>
+                <td>Yes — you can use the App without biometrics (device screen lock still recommended)</td>
+              </tr>
+              <tr>
+                <td><strong>READ / WRITE external storage</strong> (legacy Android versions)</td>
+                <td>Access files/images you choose on older OS versions</td>
+                <td>Only during document/image pick or save flows you initiate</td>
+                <td>Yes — vault text features still work; media features may be limited</td>
+              </tr>
+              <tr>
+                <td><strong>Photos / media / camera access</strong> (modern Android photo pickers / runtime grants)</td>
+                <td>Attach document photos, card images, or scan pages</td>
+                <td>Only when you open a capture/import action</td>
+                <td>Yes — deny access and continue without those attachments</td>
+              </tr>
+              <tr>
+                <td><strong>INTERNET</strong> (if enabled in the published build)</td>
+                <td>Optional convenience features such as loading website favicons from public icon services</td>
+                <td>When you type/load a site that needs an icon or similar network helper</td>
+                <td>If present, system-level denial may disable network helpers; vault data remains local</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          We do not request permissions for SMS reading, call logs, continuous background location,
+          or contacts for the core vault product described in this policy.
+        </p>
+      </section>
+
+      <!-- 8 -->
+      <section class="policy-section" id="biometrics">
+        <h2><span class="num">08</span> Biometrics in depth</h2>
+        <p>
+          When you enable biometric unlock, Smart Doc Organizer uses Android’s official biometric prompt
+          (fingerprint, face, or other modalities supported by your device and OS settings).
+        </p>
+        <h3>What we receive</h3>
+        <ul>
+          <li>A success or failure result for the authentication attempt</li>
+          <li>Possibly the fact that biometrics are available / enrolled on the device</li>
+        </ul>
+        <h3>What we never receive</h3>
+        <ul>
+          <li>Your fingerprint image or face map</li>
+          <li>A copy of biometric templates stored in the device’s secure hardware / TEE</li>
+        </ul>
+        <p>
+          Biometric templates are managed by the operating system and device manufacturer security modules.
+          Disabling biometrics in Android settings or removing enrolled fingerprints stops biometric unlock for the App.
+        </p>
+      </section>
+
+      <!-- 9 -->
+      <section class="policy-section" id="third-parties">
+        <h2><span class="num">09</span> Third parties, network requests &amp; processors</h2>
+
+        <h3>9.1 Developer-operated servers</h3>
+        <p>
+          In the current product model, vault entries are not uploaded to a developer cloud for multi-device
+          sync. That means we typically <strong>cannot</strong> see the passwords or documents you stored locally.
+        </p>
+
+        <h3>9.2 Optional / utility network calls</h3>
+        <p>
+          If network access is available, the App may contact third-party endpoints solely for user-facing convenience,
+          for example:
+        </p>
+        <ul>
+          <li><strong>Website favicon retrieval</strong> (e.g. public favicon services) when you enter a domain — the
+            request may include the domain/hostname you typed, not your password.</li>
+          <li><strong>Image loading libraries</strong> used to display remote icons you requested.</li>
+        </ul>
+        <p>
+          Those third parties process only the technical request needed to return an icon or resource.
+          Do not put secrets in URLs or hostnames.
+        </p>
+
+        <h3>9.3 Google Play &amp; Android platform</h3>
+        <p>
+          When you download the App from Google Play, Google processes installation, updates, payments
+          (if any), abuse detection, and basic distribution analytics under
+          <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google’s Privacy Policy</a>.
+          That processing is controlled by Google, not by the vault contents of this App.
+        </p>
+
+        <h3>9.4 No advertising SDKs</h3>
+        <p>
+          We do not integrate third-party ad networks (such as banner/interstitial ad SDKs) into Smart Doc Organizer
+          for the purpose of showing ads or building ad profiles.
+        </p>
+
+        <h3>9.5 Future features</h3>
+        <p>
+          If we later introduce optional cloud backup, account login, or paid subscriptions, we will:
+        </p>
+        <ul>
+          <li>Update this Privacy Policy before or at launch of the feature</li>
+          <li>Update the Google Play Data safety form</li>
+          <li>Explain what leaves your device and provide meaningful controls where required</li>
+        </ul>
+      </section>
+
+      <!-- 10 -->
+      <section class="policy-section" id="children">
+        <h2><span class="num">10</span> Children’s privacy</h2>
+        <p>
+          Smart Doc Organizer is not directed to children under 13 (or under 16 where applicable law
+          sets a higher digital consent age). We do not knowingly collect personal information from children.
+        </p>
+        <p>
+          If you are a parent or guardian and believe a child has stored personal data in the App on a shared device,
+          you can delete the items in-app or uninstall the App. If you believe a child provided information
+          directly to us through a support channel, contact us and we will take reasonable steps to delete it.
+        </p>
+        <p>
+          For Google Play Families / Designed for Families programs: this App is intended as a general
+          productivity/security utility for adults managing personal credentials, not as a children’s app.
+        </p>
+      </section>
+
+      <!-- 11 -->
+      <section class="policy-section" id="retention">
+        <h2><span class="num">11</span> Data retention &amp; deletion</h2>
+        <h3>11.1 On-device retention</h3>
+        <p>
+          Vault items remain on your device until you delete them in the App or remove the App.
+          We do not set a server-side retention period for vault contents because those contents
+          are not hosted on our servers in the current model.
+        </p>
+        <h3>11.2 How to delete data</h3>
+        <ul>
+          <li><strong>Delete individual items</strong> using in-app delete actions for that category (email, notes,
+            docs, etc.).</li>
+          <li><strong>Clear app data</strong> via Android Settings → Apps → Smart Doc Organizer → Storage → Clear data
+            (removes local database and preferences).</li>
+          <li><strong>Uninstall</strong> the App, which removes app-private storage under normal Android behavior.</li>
+        </ul>
+        <h3>11.3 Support communications</h3>
+        <p>
+          If you email us for support, we may retain your email and message as long as needed to
+          resolve your request and for legitimate record-keeping (typically no longer than necessary).
+        </p>
+      </section>
+
+      <!-- 12 -->
+      <section class="policy-section" id="your-rights">
+        <h2><span class="num">12</span> Your rights &amp; choices</h2>
+        <p>
+          Depending on where you live (for example GDPR in the EEA/UK, CCPA/CPRA in California, or other laws),
+          you may have rights such as access, correction, deletion, portability, restriction, or objection.
+        </p>
+        <p>Because vault data lives on your device, the most effective way to exercise many rights is directly in the
+          App:</p>
+        <ul>
+          <li><strong>Access / portability:</strong> view or export items using in-app features where available;
+            otherwise, you already possess the data on-device.</li>
+          <li><strong>Correction:</strong> edit entries inside the App.</li>
+          <li><strong>Deletion:</strong> delete entries, clear app data, or uninstall.</li>
+          <li><strong>Withdraw permission:</strong> revoke Android permissions in system settings at any time.</li>
+          <li><strong>Opt out of biometrics:</strong> disable biometric unlock / remove biometrics in device settings.
+          </li>
+        </ul>
+        <p>
+          For requests about information you sent us by email (support tickets), contact
+          <a href="mailto:hemantmarkhande99@gmail.com">hemantmarkhande99@gmail.com</a>. We will respond within a
+          reasonable period
+          required by applicable law.
+        </p>
+        <div class="callout">
+          <strong>California notice (CCPA/CPRA style)</strong>
+          <p>
+            We do not “sell” or “share” personal information for cross-context behavioral advertising as those terms are
+            commonly defined.
+            Categories of data processed are described in this policy and are primarily stored on your device under your
+            control.
+          </p>
+        </div>
+      </section>
+
+      <!-- 13 -->
+      <section class="policy-section" id="international">
+        <h2><span class="num">13</span> International users</h2>
+        <p>
+          The App may be used worldwide via Google Play. Local storage remains on the device wherever you are.
+          If you contact us by email, your message may be processed in the country where the developer operates
+          or where email infrastructure is hosted. We take reasonable steps appropriate to the nature of support data.
+        </p>
+      </section>
+
+      <!-- 14 -->
+      <section class="policy-section" id="play-data-safety">
+        <h2><span class="num">14</span> Google Play Data safety mapping</h2>
+        <p>
+          Use this section when filling the Play Console <strong>Data safety</strong> form.
+          Align the form with your actual published APK/AAB. The table below reflects the
+          <em>local-first vault</em> design of Smart Doc Organizer.
+        </p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Play Data safety topic</th>
+                <th>Suggested disclosure for this App</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Does your app collect or share user data?</td>
+                <td>Declare collection only for data that leaves the device or is handled in a way Play defines as
+                  “collected.” On-device-only processing may still require careful form answers — follow Play’s latest
+                  definitions.</td>
+                <td>Vault content is stored on device; optional network icon fetches may transmit hostnames.</td>
+              </tr>
+              <tr>
+                <td>Data types — Personal info</td>
+                <td>Name (if user enters a display name); Email address / User IDs (if user stores them as vault items)
+                </td>
+                <td>Stored as user content on device</td>
+              </tr>
+              <tr>
+                <td>Data types — Financial info</td>
+                <td>User payment info / other financial (if user stores bank/card details)</td>
+                <td>User-entered vault content, on device</td>
+              </tr>
+              <tr>
+                <td>Data types — Photos and videos</td>
+                <td>Photos (document images, card images, scans) if user adds them</td>
+                <td>On-device storage</td>
+              </tr>
+              <tr>
+                <td>Data types — App activity / files</td>
+                <td>App interactions / files selected by user as needed</td>
+                <td>Operational / user-driven</td>
+              </tr>
+              <tr>
+                <td>Data types — Device or other IDs</td>
+                <td>Only if crash tooling or Play services require them in your build</td>
+                <td>Declare accurately per SDK inventory</td>
+              </tr>
+              <tr>
+                <td>Security practices — Data encrypted in transit</td>
+                <td>Yes for HTTPS network calls (if any)</td>
+                <td>Favicon/network helpers should use HTTPS</td>
+              </tr>
+              <tr>
+                <td>Users can request deletion</td>
+                <td>Yes — via in-app delete / clear data / uninstall; email for support data</td>
+                <td>Document the path in Play form</td>
+              </tr>
+              <tr>
+                <td>Data sold / used for ads</td>
+                <td>No sale; no ad SDK personalization in current design</td>
+                <td>Keep this true or update policy if changed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="callout important">
+          <strong>Play Console checklist</strong>
+          <p>
+            1) Host this page on HTTPS (GitHub Pages, Firebase Hosting, Netlify, or your domain).<br />
+            2) Paste the public URL into Play Console → App content → Privacy policy.<br />
+            3) Complete Data safety to match this policy and your APK.<br />
+            4) Complete Data deletion instructions if required for your target API / Play policies.<br />
+            5) Keep package name, app name, and contact email consistent across store listing and this site.
+          </p>
+        </div>
+      </section>
+
+      <!-- 15 -->
+      <section class="policy-section" id="changes">
+        <h2><span class="num">15</span> Changes to this Privacy Policy</h2>
+        <p>
+          We may update this Privacy Policy to reflect product changes, legal requirements, or clearer wording.
+          When we make material changes, we will update the “Last updated” date at the top of this page.
+          Where required by law or Play policy, we may provide additional notice in the App or store listing.
+        </p>
+        <p>
+          Continued use of the App after an updated policy becomes effective constitutes acceptance of the revised
+          policy,
+          to the extent permitted by applicable law.
+        </p>
+      </section>
+
+      <!-- 16 -->
+      <section class="policy-section" id="contact">
+        <h2><span class="num">16</span> Contact us</h2>
+        <p>
+          Questions, privacy requests, or security concerns about Document Locker are welcome.
+          We aim to respond promptly and transparently.
+        </p>
+        <div class="contact-card">
+          <div class="contact-row"><span>App</span> Document Locker</div>
+          <div class="contact-row"><span>Package</span> com.myapp.microservice</div>
+          <div class="contact-row"><span>Privacy email</span> <a
+              href="mailto:hemantmarkhande99@gmail.com">hemantmarkhande99@gmail.com</a></div>
+          <div class="contact-row"><span>Support email</span> <a
+              href="mailto:thesiddharthgedam@gmail.com">thesiddharthgedam@gmail.com</a></div>
+          <div class="contact-row"><span>Developer</span>SIDDHARTH RATAN GEDAM</div>
+        </div>
+        <p style="margin-top:1rem">
+          Related document: <a href="terms.html">Terms of Service</a>.
+        </p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html" style="margin-bottom:0.85rem">
+            <span class="brand-mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
+              </svg>
+            </span>
+            <span>Document Locker</span>
+          </a>
+          <p>A private, on-device vault for passwords, documents, and personal credentials — built for transparency.</p>
+        </div>
+        <div>
+          <h4>Legal</h4>
+          <a href="index.html">Privacy Policy</a>
+          <a href="terms.html">Terms of Service</a>
+          <a href="#play-data-safety">Play Data safety guide</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <a href="mailto:hemantmarkhande99@gmail.com">hemantmarkhande99@gmail.com</a>
+          <a href="mailto:thesiddharthgedam@gmail.com">thesiddharthgedam@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year">2026</span> Document Locker. All rights reserved.</span>
+        <span>Package: com.myapp.microservice · Made for Google Play publishing</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  <script src="script.js"></script>
+</body>
+
+</html>
